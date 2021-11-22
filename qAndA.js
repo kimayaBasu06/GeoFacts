@@ -1,0 +1,25 @@
+var countriesQs=new Array();
+countriesQs[0]="AB";
+countriesQs[1]="CD";
+countriesQs[2]="EF";
+countriesQs[3]="GH";
+countriesQs[4]="IJ";
+countriesQs[5]="KL";
+countriesQs[6]="MN";
+countriesQs[7]="OP";
+countriesQs[8]="QR";
+countriesQs[9]="ST";
+countriesQs[10]="UV";
+
+var countriesAs=new Array();
+countriesAs[0]="1";
+countriesAs[1]="2";
+countriesAs[2]="3";
+countriesAs[3]="4";
+countriesAs[4]="5";
+countriesAs[5]="6";
+countriesAs[6]="7";
+countriesAs[7]="8";
+countriesAs[8]="9";
+countriesAs[9]="10";
+countriesAs[10]="11";
