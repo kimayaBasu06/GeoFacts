@@ -23,3 +23,30 @@ countriesAs[7]="8";
 countriesAs[8]="9";
 countriesAs[9]="10";
 countriesAs[10]="11";
+
+
+var statesQs=new Array();
+statesQs[0]="AB";
+statesQs[1]="CD";
+statesQs[2]="EF";
+statesQs[3]="GH";
+statesQs[4]="IJ";
+statesQs[5]="KL";
+statesQs[6]="MN";
+statesQs[7]="OP";
+statesQs[8]="QR";
+statesQs[9]="ST";
+statesQs[10]="UV";
+
+var countriesAs=new Array();
+countriesAs[0]="1";
+countriesAs[1]="2";
+countriesAs[2]="3";
+countriesAs[3]="4";
+countriesAs[4]="5";
+countriesAs[5]="6";
+countriesAs[6]="7";
+countriesAs[7]="8";
+countriesAs[8]="9";
+countriesAs[9]="10";
+countriesAs[10]="11";
