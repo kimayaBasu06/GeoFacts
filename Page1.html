@@ -13,8 +13,16 @@
     <button class="button2" onclick="playCountries()">Countries</button>
     <BR></BR>
     <button class="button3" onclick="leaderB()">Leader Board</button>
+
+      <img class = "img1" src = "Earth.jpg" onmouseover = "display(this)">
+      <img class = "img2" src = "UsStates.jpg" onmouseover = "display(this)">
+
+
     <script>
 
+    function display(element){
+      document.getElementById('image').innerHTML = element.alt;
+    }
 
     function playSates() {
       location.replace("Page2.html")
