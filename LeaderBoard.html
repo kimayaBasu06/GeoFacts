@@ -7,10 +7,38 @@
   </head>
   <body>
     <h2>Leader Board</h2>
-    <p id = "leaderBoard">This is some more content.</p>
 
     <button class="geobutton" onclick="nextPage()">GeoFacts</button>
-
+    <style>
+      th, td {
+        border:1.5px solid black;
+      }
+      table {
+        border:2.5px solid black;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+    </style>
+    <table style="width:80%">
+    <tr>
+      <th>Name</th>
+      <th>Score</th>
+      <th>Streak</th>
+    </tr>
+    <tr>
+      <td>Alfreds Futterkiste</td>
+      <td>Maria Anders</td>
+      <td>Germany</td>
+    </tr>
+    <tr>
+      <td>Centro comercial Moctezuma</td>
+      <td>Francisco Chang</td>
+      <td>Mexico</td>
+    </tr>
+    </table>
     <script>
     function nextPage() {
       location.replace("Page1.html")
