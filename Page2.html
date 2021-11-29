@@ -6,14 +6,20 @@
     <link rel="stylesheet" type="text/css" href="pages.css?rnd=132">
   </head>
   <body>
-    <h2>This is the second page.</h2>
-    <p id = "page2">This is some more content.</p>
+    <h2>Learn about the U.S. States!</h2>
+    <p>Instructions: </p>
+    <p1>Content </p1>
 
-    <button class="button2" onclick="nextPage()">Back</button>
+    <button class="geobutton" onclick="nextPage()">GeoFacts</button>
+    <img class = "play" src = "blueplay.jpg" onclick="play()">
 
     <script>
     function nextPage() {
       location.replace("Page1.html")
+    }
+
+    function play() {
+      location.replace("PlayStates.html")
     }
     </script>
   </body>
