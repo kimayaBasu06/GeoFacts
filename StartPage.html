@@ -10,15 +10,14 @@
     <p id = "page2">Please enter your name:</p>
 
     <form id="form" onsubmit="return false;">
-    <input style="position:absolute; top:28.5%; left:34%; width:40%;" type="text" id="userInput" />
-    <input style="position:absolute; top:28.5%; left:76%; width:20%;" type="submit" onclick="othername();"/>
+    <input style="position:absolute; top:31.9%; left:48%; width:25%;" type="text" id="userInput" />
+    <input style="position:absolute; top:31.9%; left:76%; width:20%;" type="submit" onclick="othername();"/>
     </form>
     <!-- <button onclick="nextPage()">Submit</button> -->
 
     <script>
     function othername() {
         var input = document.getElementById("userInput").value;
-        document.write(input);
         location.replace("Page1.html")
     }
     </script>
