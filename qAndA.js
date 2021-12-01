@@ -208,3 +208,8 @@ statesAs[46]="New Mexico";
 statesAs[47]="Arizona";
 statesAs[48]="Alaska";
 statesAs[49]="Hawaii";
+
+var myPix = new Array();
+myPix[0] = "Australia.png";
+myPix[1] = "Bolivia.png";
+myPix[2] = "Brazil.png";
