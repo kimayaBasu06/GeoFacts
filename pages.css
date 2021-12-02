@@ -164,3 +164,12 @@ h2 {
 	top: 50%;
 	left: 6%;
 }
+
+score {
+	width: 15px;
+	height: 25px;
+	border-radius: 100%;
+	position: absolute;
+	top: 3%;
+	right: 8%;
+}
