@@ -9,6 +9,7 @@
     <h2>Countries</h2>
 
     <button class="geobutton" onclick="nextPage()">GeoFacts</button>
+    <score>Score:</score>
     <script language="JavaScript" type="text/javascript" src="qAndA.js"></script>
     <p id="p5"></p>
     <script>
@@ -16,6 +17,20 @@
       {
         let num = Math.floor(Math.random()*(countriesQs.length));
         document.getElementById("p5").innerHTML = countriesQs[num];
+      }
+      
+      function scoreValue()
+      {
+         playerScore = document.getElementById("playerScore");
+
+         if(option == true)
+         {
+           playerScore += 1;
+         }
+         else
+         {
+           playerscore +=0;
+         }
       }
 
       function nextPage() {
