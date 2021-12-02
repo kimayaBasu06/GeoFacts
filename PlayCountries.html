@@ -9,35 +9,64 @@
     <h2>Countries</h2>
 
     <button class="geobutton" onclick="nextPage()">GeoFacts</button>
-    <score>Score:</score>
     <script language="JavaScript" type="text/javascript" src="qAndA.js"></script>
     <p id="p5"></p>
     <script>
       function getCountries()
       {
-        let num = Math.floor(Math.random()*(countriesQs.length));
-        document.getElementById("p5").innerHTML = countriesQs[num];
-      }
-      
-      function scoreValue()
-      {
-         playerScore = document.getElementById("playerScore");
+        // genetrates question
+        let number = Math.floor(Math.random()*(countriesQs.length));
+        document.getElementById("p5").innerHTML = countriesQs[number];
 
-         if(option == true)
-         {
-           playerScore += 1;
-         }
-         else
-         {
-           playerscore +=0;
-         }
+        let ans = number;
+        let num1 = Math.floor(Math.random()*(myPix.length));
+        let num2 = Math.floor(Math.random()*(myPix.length));
+        // makes sure none of the displayed images are the same
+        do {
+          if(num1 == ans) {
+            let num1 = Math.floor(Math.random()*(myPix.length));
+          }
+          else {
+            if (num2 == ans) {
+              let num2 = Math.floor(Math.random()*(myPix.length));
+            }
+            else {
+              true;
+            }
+          }
+        } while(false);
+
+        var options = ["pos1", "pos2", "pos3"];
+        let o2 = 0;
+        let o3 = 0;
+        let o1 = Math.floor(Math.random()*(options.length));
+        if (o1 == 0) {
+
+        }
+
+        window.alert(o1 + "  " + o2 + "  " + o3);
+        document.write('<img class='+ options[o1] +' src=' + myPix[num1] + ' onclick="answer()">');
+        document.write('<img class='+ options[o3] +' src=' + myPix[ans] + ' onclick="answer()">');
+        document.write('<img class='+ options[o2] +' src=' + myPix[num2] + ' onclick="wAnswer()">');
       }
 
       function nextPage() {
-        location.replace("Page1.html")
+        location.replace("Page1.html");
+      }
+
+      function wAnswer() {
+        window.alert("Oops, you got it wrong. Try again next time. :(")
+        location.replace("LeaderBoard.html");
+      }
+
+      function answer() {
+        window.alert("Yo got it correct! Onto the next one! :)")
+        location.replace("PlayCountries.html");
       }
 
       getCountries();
+
+
     </script>
   </body>
 </html>
