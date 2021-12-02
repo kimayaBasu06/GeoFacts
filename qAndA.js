@@ -1,5 +1,5 @@
 var countriesQs=new Array();
-countriesQs[0]="Where did World War 2 mainly take place?";
+countriesQs[0]="Where is most of the Amazon forest located?";
 countriesQs[1]="Where is the wettest inhabited place on earth?";
 countriesQs[2]="Where were the first olympics held?";
 countriesQs[3]="Where was ice-cream invented?";
@@ -52,7 +52,7 @@ countriesQs[49]="Where is the largest ancient castle in the world?";
 
 
 var countriesAs=new Array();
-countriesAs[0]="Europe";
+countriesAs[0]="Brazil";
 countriesAs[1]="India";
 countriesAs[2]="Greece";
 countriesAs[3]="China";
@@ -72,7 +72,7 @@ countriesAs[16]="Mexico";
 countriesAs[17]="Chile";
 countriesAs[18]="Canada";
 countriesAs[19]="United Arab of Emirates";
-countriesAs[20]="Antarctica";
+countriesAs[20]="Greenland";
 countriesAs[21]="China";
 countriesAs[22]="Russia";
 countriesAs[23]="Australia";
