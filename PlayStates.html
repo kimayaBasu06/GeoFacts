@@ -7,9 +7,8 @@
   </head>
   <body>
     <h2>U.S. States</h2>
-
+    <button class="scoreButton" onclick="">Score: </button>
     <button class="geobutton" onclick="nextPage()">GeoFacts</button>
-    <score>Score:</score>
     <script language="JavaScript" type="text/javascript" src="qAndA.js"></script>
     <p id="p5"></p>
     <script>
@@ -17,24 +16,52 @@
       {
         let num = Math.floor(Math.random()*(statesQs.length));
         document.getElementById("p5").innerHTML = statesQs[num];
-      }
-      function scoreValue()
-      {
-         playerScore = document.getElementById("playerScore");
 
-         if(option == true)
-         {
-           playerScore += 1;
-         }
-         else
-         {
-           playerscore +=0;
-         }
+        let ans = num;
+        let num1 = Math.floor(Math.random()*(sPics.length));
+        let num2 = Math.floor(Math.random()*(sPics.length));
+        // makes sure none of the displayed images are the same
+        while(num1 == ans) {
+          let num1 = Math.floor(Math.random()*(sPics.length));
+        }
+        while(num2==num1 || num2 == ans) {
+          let num2 = Math.floor(Math.random()*(sPics.length));
+        }
+
+        var n1 = Math.floor(Math.random()*(ray1.length));
+        var n2 = Math.floor(Math.random()*(ray1.length));
+        var n3 = Math.floor(Math.random()*(ray1.length));
+        // makes sure none of the displayed images are the same position/place
+        while(n2 == n1) {
+          n2 = Math.floor(Math.random()*(ray1.length));
+        }
+        while (n3 == n2 || n3 == n1) {
+          n3 = Math.floor(Math.random()*(ray1.length));
+        }
+
+        document.write('<img class=' + ray1[n1] + ' src=' + sPics[num1] + ' onclick="answer()">');
+        document.write('<img class=' + ray1[n2] + ' src=' + sPics[ans] + ' onclick="answer()">');
+        document.write('<img class=' + ray1[n3] + ' src=' + sPics[num2] + ' onclick="wAnswer()">');
+
       }
 
       function nextPage() {
-        location.replace("Page1.html")
+        location.replace("Page1.html");
       }
+
+      function wAnswer() {
+        window.alert("Oops, you got it wrong. Try again next time. :(");
+        location.replace("LeaderBoard.html");
+      }
+
+      function answer() {
+        window.alert("You got it correct! Onto the next one! :)");
+        // calls function in qAndA.js
+        // this function will add and keep track of the score;
+        calcScore();
+
+      }
+
       getStates();
     </script>
   </body>
