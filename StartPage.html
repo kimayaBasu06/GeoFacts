@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="pages.css?rnd=132">
   </head>
   <body>
+    <script language="JavaScript" type="text/javascript" src="qAndA.js"></script>
     <h1>GeoFacts</h1>
     <p id = "page2">Please enter your name:</p>
 
@@ -18,7 +19,9 @@
     <script>
     function othername() {
         var input = document.getElementById("userInput").value;
-        location.replace("Page1.html")
+        var userN = localStorage.setItem("userName", input);
+        location.replace("Page1.html");
+
     }
     </script>
   </body>

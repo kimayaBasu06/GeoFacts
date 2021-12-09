@@ -7,13 +7,18 @@
   </head>
   <body>
     <h2>U.S. States</h2>
-    <button class="scoreButton" onclick="">Score: </button>
+    <!-- <button class="scoreButton" onclick="">Score: </button> -->
+    <button class="scoreButton" onclick="">Score: <span id="userScore"></button>
+
+
     <button class="geobutton" onclick="nextPage()">GeoFacts</button>
     <script language="JavaScript" type="text/javascript" src="qAndA.js"></script>
     <p id="p5"></p>
     <script>
       function getStates()
       {
+        let userScore = localStorage.getItem("theScore");
+        document.getElementById("userScore").innerHTML = userScore;
         let num = Math.floor(Math.random()*(statesQs.length));
         document.getElementById("p5").innerHTML = statesQs[num];
 
@@ -51,15 +56,16 @@
 
       function wAnswer() {
         window.alert("Oops, you got it wrong. Try again next time. :(");
-        location.replace("LeaderBoard.html");
+        location.replace("playAgain.html");
+
       }
 
-      function answer() {
+      function answer(score) {
         window.alert("You got it correct! Onto the next one! :)");
         // calls function in qAndA.js
         // this function will add and keep track of the score;
-        calcScore();
-
+        let uScore = calcScore();
+        location.replace("PlayStates.html")
       }
 
       getStates();

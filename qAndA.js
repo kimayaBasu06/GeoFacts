@@ -317,18 +317,20 @@ ray1[0] = "pos1";
 ray1[1] = "pos2";
 ray1[2] = "pos3";
 
-var score = new Array();
-score[0] = 0
-function calcScore() {
-  score[0]++;
-  window.alert(score[0]);
-  location.replace("PlayStates.html")
+var score = 0;
+
+function calcScore(score) {
+  score = localStorage.getItem("theScore");
+  score++;
+  score = localStorage.setItem("theScore", score);
+  return score;
 }
 //saves usernames into an array
-var names = new Array();
-var count = 0;
-function saveInput(input) {
-  names[count] ="" + input;
-  window.alert(names[count]);
-  count++;
+
+function rScore() {
+  score = localStorage.getItem("theScore");
+  score = 0;
+  score = localStorage.setItem("theScore", score);
 }
+
+var allScores = new Array();

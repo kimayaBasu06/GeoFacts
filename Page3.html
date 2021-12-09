@@ -6,9 +6,9 @@
     <link rel="stylesheet" type="text/css" href="pages.css?rnd=132">
   </head>
   <body>
-    <h2>U.S. States</h2>
+    <h2>Learn about the World Countries!</h2>
     <p>Instructions: </p>
-    <p1>A random question will pop up at the top right of the screen as well as 3 different 
+    <p1>A random question will pop up at the top right of the screen as well as 3 different
     answer options. You have to choose the best suited country that you think answers the
     question the most. If you get it right you will earn a point, lets see how many you
     can get in a row! If you get a question wrong you will be taken back to the start
@@ -16,7 +16,7 @@
 
     <button class="geobutton" onclick="nextPage()">GeoFacts</button>
     <img class = "play" src = "blueplay.jpg" onclick="play()">
-
+    <script language="JavaScript" type="text/javascript" src="qAndA.js"></script>
     <script>
     function nextPage() {
       location.replace("Page1.html")
@@ -25,6 +25,12 @@
     function play() {
       location.replace("PlayCountries.html")
     }
+
+    function resetScore() {
+      rScore();
+    }
+
+    resetScore()
     </script>
   </body>
 </html>
