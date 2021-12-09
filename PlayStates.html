@@ -19,10 +19,9 @@
       {
         let userScore = localStorage.getItem("theScore");
         document.getElementById("userScore").innerHTML = userScore;
-        let num = Math.floor(Math.random()*(statesQs.length));
-        document.getElementById("p5").innerHTML = statesQs[num];
 
-        let ans = num;
+        let ans = Math.floor(Math.random()*(statesQs.length));
+        document.getElementById("p5").innerHTML = statesQs[ans];
         let num1 = Math.floor(Math.random()*(sPics.length));
         let num2 = Math.floor(Math.random()*(sPics.length));
         // makes sure none of the displayed images are the same
@@ -44,7 +43,7 @@
           n3 = Math.floor(Math.random()*(ray1.length));
         }
 
-        document.write('<img class=' + ray1[n1] + ' src=' + sPics[num1] + ' onclick="answer()">');
+        document.write('<img class=' + ray1[n1] + ' src=' + sPics[num1] + ' onclick="wAnswer()">');
         document.write('<img class=' + ray1[n2] + ' src=' + sPics[ans] + ' onclick="answer()">');
         document.write('<img class=' + ray1[n3] + ' src=' + sPics[num2] + ' onclick="wAnswer()">');
 
