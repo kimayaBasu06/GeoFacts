@@ -25,7 +25,7 @@ t {
 p5 {
 	background-color: #cde0f4;
 	font-family: cursive;
-	font-size: 35px; /*1 em = 10px */
+	font-size: 27px; /*1 em = 10px */
   color: #000000;
 	margin: 10px;
 	position: absolute;
@@ -36,7 +36,7 @@ p5 {
 p1 {
 	background-color: #cde0f4;
 	font-family: cursive;
-	font-size: 30px; /*1 em = 10px */
+	font-size: 27px; /*1 em = 10px */
   color: #000008;
 	margin: 100px;
 	top: 30%;
