@@ -25,11 +25,11 @@ t {
 p5 {
 	background-color: #cde0f4;
 	font-family: cursive;
-	font-size: 27px; /*1 em = 10px */
+	font-size: 40px; /*1 em = 10px */
   color: #000000;
 	margin: 10px;
 	position: absolute;
-  top: 27%;
+  top: 50%;
 	text-align: center;
 }
 
@@ -182,6 +182,22 @@ h2 {
 	position: absolute;
 	top: 70%;
 	right: 8%;
+}
+
+.og{
+	width: 400px;
+	height: 250px;
+	position: absolute;
+	top: 60%;
+	right: 10%;
+}
+
+.geopic {
+	width: 480px;
+	height: 420px;
+	position: absolute;
+	top: 40%;
+	left: 8%;
 }
 
 .play2{
